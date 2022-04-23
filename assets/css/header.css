@@ -67,6 +67,8 @@
 
 .navbar-header-user--login {
     font-size: 1.5rem;
+    color: var(--background-color--);
+    text-decoration: none;
 }
 
 .navbar-header-cart {
