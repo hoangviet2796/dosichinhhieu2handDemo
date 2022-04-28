@@ -74,6 +74,7 @@
 .navbar-header-user--login {
     font-size: 1.7rem;
     font-weight: 600;
+    line-height: 100%;
     color: var(--background-color--);
     text-decoration: none;
 }
