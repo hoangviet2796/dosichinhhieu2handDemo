@@ -8,7 +8,10 @@
     <title>Dosichinhhieu2hand</title>
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/slider.css">
     <link rel="stylesheet" href="../assets/css/grid__system.css">
+    <link rel="stylesheet" href="../assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -21,7 +24,7 @@
             <div class="navbar-header-search">
                 <input type="text">
                 <button class="btn-search">
-                    <img src="../assets/img/icon/search-interface-symbol.png" alt="">
+                    <i class="btn-search--icon fas fa-search"></i>
                     Tìm kiếm
                 </button>
             </div>
@@ -29,18 +32,53 @@
                 <a href="" class="navbar-header-user--login">Đăng ký/ Đăng nhập</a>
             </div>
             <div class="navbar-header-cart">
-                <img src="../assets/img/icon/shopping-bag.png" alt="">
+                <i class="navbar-header-cart--icon fas fa-shopping-cart"></i>
             </div>
         </nav>
-        <div class="grid wide row category-header">
-            <ul class="row category-header-list">
-                <li class="">DANH MỤC 1</li>
-                <li class="">DANH MỤC 2</li>
-                <li class="">DANH MỤC 3</li>
-                <li class="">DANH MỤC 4</li>
-            </ul>
+        <div class="grid wide row header-menu_bar">
+            <span class="header-menu_bar--list">
+                <a href="#" class="header-menu_bar--list--text menu_bar--list--test--home">DANH MỤC 1</a>
+            </span>
+            <span class="header-menu_bar--list">
+                <a href="#" class="header-menu_bar--list--text">DANH MỤC 2</a>
+            </span>
+            <span class="header-menu_bar--list">
+                <a href="#" class="header-menu_bar--list--text">DANH MỤC 3</a>
+            </span>
+            <span class="header-menu_bar--list">
+                <a href="#" class="header-menu_bar--list--text">DANH MỤC 4</a>
+            </span>
+            <span class="header-menu_bar--list">
+                <a href="#" class="header-menu_bar--list--text">DANH MỤC 5</a>
+            </span>
+            <span class="header-menu_bar--list">
+                <a href="#" class="header-menu_bar--list--text">DANH MỤC 6</a>
+            </span>
+            <span class="header-menu_bar--list">
+                <a href="#" class="header-menu_bar--list--text">DANH MỤC 7</a>
+            </span>
         </div>
     </div>
+    <div class="container">
+        <div class="grid wide swiper mySwiper">
+            <div id="sliderContainer" class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../assets/js/slider.js"></script>
 </body>
 
 </html>

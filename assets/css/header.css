@@ -32,6 +32,7 @@
 .navbar-header-search input {
     width: 80%;
     height: 100%;
+    outline: none;
     border: 1px solid;
     border-right: none;
     border-color: #e9ebee;
@@ -59,29 +60,43 @@
     padding: 1.5rem;
 }
 
-.btn-search img {
+.btn-search:hover {
+    color: var(--primary-color--);
+}
+
+.btn-search--icon {
+    font-size: 1.6rem;
     width: 20%;
-    filter: invert(96%) sepia(100%) saturate(12%) hue-rotate(237deg) brightness(103%) contrast(103%);
+    height: 70%;
     margin-right: auto;
 }
 
 .navbar-header-user--login {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
     color: var(--background-color--);
     text-decoration: none;
+}
+
+.navbar-header-user--login:hover {
+    color: var(--primary-color--);
 }
 
 .navbar-header-cart {
     width: 10%;
     height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
-.navbar-header-cart img {
-    width: 50%;
-    height: 50%;
+.navbar-header-cart--icon {
+    color: var(--black-color--);
+    font-size: 3rem;
+}
+
+.navbar-header-cart--icon:hover {
+    color: var(--primary-color--);
 }
 
 .category-header-list {
@@ -89,8 +104,48 @@
     justify-content: space-between;
 }
 
-.category-header-list li {
-    list-style: none;
-    font-size: 1.3rem;
+.header-menu_bar {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    font-size: 1.5rem;
     font-weight: 600;
+    align-items: center;
+}
+
+.header-menu_bar--list {
+    position: relative;
+    padding: 0px 37px;
+}
+
+.header-menu_bar--list--text {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: var(--text-color--);
+    line-height: 25px;
+}
+
+
+.header-menu_bar--list--text::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 0px;
+    background-color: var(--primary-color--);
+    height: 2px;
+    transform-origin: left;
+    transition: 0.3s ease-out;
+    /* display: none;
+    animation: leftToRight ease-out 0.3s; */
+}
+
+
+.header-menu_bar--list:hover .header-menu_bar--list--text {
+    color: var(--primary-color--);
+}
+
+.header-menu_bar--list:hover .header-menu_bar--list--text::after {
+    width: 100%;
 }
