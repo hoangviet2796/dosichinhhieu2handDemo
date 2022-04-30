@@ -13,7 +13,7 @@
 .product__item:hover {
     transform: translateY(-1px);
     box-shadow: 0 1rem 20px 0 rgb(0 0 0 / 5%);
-    border: 1px solid #ee4d2d;
+    border: 1px solid var(--primary-color--);
 }
 
 .product__background-img {

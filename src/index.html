@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/grid__system.css">
     <link rel="stylesheet" href="../assets/css/items.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../assets/css/slider.css">
@@ -21,7 +23,7 @@
     <div class="header">
         <nav class="grid wide row navbar-header">
             <div class="navbar-header-logo">
-                <img src="../assets/img/svg_20220423_130639_0000.png" alt="">
+                <object data="../assets/img/svg_20220423_130639_0000.svg" type="" width="100%" height="100%"></object>
             </div>
             <div class="navbar-header-search">
                 <input type="text">
@@ -50,19 +52,10 @@
             <span class="header-menu_bar--list">
                 <a href="#" class="header-menu_bar--list--text">DANH MỤC 4</a>
             </span>
-            <span class="header-menu_bar--list">
-                <a href="#" class="header-menu_bar--list--text">DANH MỤC 5</a>
-            </span>
-            <span class="header-menu_bar--list">
-                <a href="#" class="header-menu_bar--list--text">DANH MỤC 6</a>
-            </span>
-            <span class="header-menu_bar--list">
-                <a href="#" class="header-menu_bar--list--text">DANH MỤC 7</a>
-            </span>
         </div>
     </div>
-    <div class="container">
-        <div class="grid wide swiper mySwiper">
+    <div class="grid wide container">
+        <div class="swiper mySwiper">
             <div id="sliderContainer" class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="../assets/img/banner/png_20220425_143709_0000.png" alt="">
@@ -78,43 +71,71 @@
             <div class="sliderBtn swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
         </div>
-        <div class="grid wide row productContainer">
-            <div class="col c-2 ">
-                <a class="product__item" href="#">
-                    <div class="product__background-img"
-                        style="background-image: url(https://bizweb.dktcdn.net/thumb/1024x1024/100/345/647/products/62219288-885882648442544-6185638073229901824-n.jpg);">
-                    </div>
-                    <h4 class="product__title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum vero
-                        minima dolorum quam provident quae molestiae debitis</h4>
-                    <h5 class="product_origin">YAME</h5>
-                    <div class="product__price">
-                        <span class="product__price--old">160.000đ</span>
-                        <span class="product__price--new">150.000đ</span>
-                    </div>
-                    <div class="product__status">
-                        <span class="product__status-heart">
-                            <!--<i class="far fa-heart"></i>-->
-                            <i class="fas fa-heart"></i>
-                        </span>
-                        <span class="product__status-rate">
-                            <i class="product__status-icon-gold fas fa-star"></i>
-                            <i class="product__status-icon-gold fas fa-star"></i>
-                            <i class="product__status-icon-gold fas fa-star"></i>
-                            <i class="product__status-icon-gold fas fa-star"></i>
-                            <i class=" fas fa-star"></i>
-                        </span>
-                    </div>
-                    <div class="product__origin">TP.Hồ Chí Minh</div>
-                    <div class="product__sale-off">
-                        <span class="product__sale-off-percent">10%</span>
-                        <span class="product__sale-off-text">GIẢM</span>
-                    </div>
-                </a>
+        <div class="row productContainer"></div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="grid wide row footer__wrap">
+            <div class="col c-4">
+                <div class="footer__item">
+                    <a class="footer__logo" href="#">
+                        <object data="../assets/img/logo-white.svg" type="" width="50%" height="50%"></object>
+                    </a>
+                    <p class="footer__logo--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <ul class="footer__info">
+                        <li class="footer__info-contact">
+                            <a href="mailto:setsail@quode.com" class="footer__info-contact--text">
+                                <i class="footer__info-contact--icon far fa-envelope"></i>
+                                setsail@quode.com</a>
+                        </li>
+                        <li class="footer__info-contact">
+                            <a href="tel:1%562%867%5309" class="footer__info-contact--text">
+                                <i class="footer__info-contact--icon fas fa-phone-alt"></i>
+                                1 562 867 5309</a>
+                        </li>
+                        <li class="footer__info-contact">
+                            <a href="https://www.google.com/maps/@9.779349,105.6189045,11z?hl=vi-VN" target="-blank"
+                                class="footer__info-contact--text">
+                                <i class="footer__info-contact--icon fas fa-map-marker-alt"></i>
+                                Broadway & Morris St, New York</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col c-4">
+                <div class="footer__item">
+                    <span class="footer__title">Đăng ký ngay để nhận những ưu đãi mới nhất</span>
+                    <p class="footer__input-text">Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho</p>
+                    <form class="footer__input-form">
+                        <div class="footer__form__input">
+                            <i class="footer__form__input--icon fas fa-user"></i>
+                            <input class="footer__form__input--text" type="text" required placeholder="Name"></input>
+                        </div>
+                        <div class="footer__form__input">
+                            <i class="footer__form__input--icon far fa-envelope"></i>
+                            <input class="footer__form__input--text" type="email" required placeholder="Email"></input>
+                        </div>
+                        <button class="footer__form__btn">ĐĂNG KÝ</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col c-4">
+                <div class="footer__item">
+                    <span class="footer__title">Our Instagram</span>
+                    <p class="footer__input-text">Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus
+                        null</p>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="powered__section">
+            <p class="powered-text">Bản quyền thuộc về @
+                <a class="powered-text-label" href="#">Dosichinhhieu2hand</a>
+            </p>
+        </div>
+    </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="../assets/js/slider.js"></script>
+    <script src="../assets/js/product.js"></script>
 </body>
 
 </html>
