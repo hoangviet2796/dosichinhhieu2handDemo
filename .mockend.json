@@ -1,21 +1,16 @@
 {
   "Test": {
     "title": {
-      "string": {
-        "loremWords": {
-          "minLength": 5,
-          "maxLength": 20
-        }
-      }
-    },
-    "image": {
-      "regexp": "https://i\\.pravatar\\.cc/150\\?u=[0-9]{5}"
-    },
-    "price": {
-      "int": {
-        "min": 100000,
-        "max": 10000000
-      }
+      "string": {}
+    }
+  },
+  "image": {
+    "regexp": "https://i\\.pravatar\\.cc/150\\?u=[0-9]{5}"
+  },
+  "price": {
+    "int": {
+      "min": 100000,
+      "max": 10000000
     }
   }
 }
