@@ -12,7 +12,12 @@
     }
 
     .btn-search--icon {
+        width: 30%;
         margin-right: 0;
+    }
+
+    .navbar-header-cart--icon {
+        width: 70%;
     }
 
     .header-menu_bar {
@@ -38,6 +43,7 @@
         margin: auto;
     }
 
+    .navbar-header-cart,
     .navbar-header-user {
         display: none;
     }
@@ -49,5 +55,9 @@
     .mySwiper .swiper-button-prev,
     .mySwiper .swiper-button-next {
         display: none;
+    }
+
+    .navbarMobile {
+        display: flex;
     }
 }

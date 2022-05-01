@@ -62,10 +62,6 @@
     padding: 0 1.5rem;
 }
 
-.btn-search:hover {
-    color: var(--primary-color--);
-}
-
 .btn-search--icon {
     font-size: 1.6rem;
     width: 20%;
@@ -80,19 +76,17 @@
     text-decoration: none;
 }
 
-.navbar-header-user--login:hover {
-    color: var(--primary-color--);
-}
-
 .navbar-header-cart {
     width: 10%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .navbar-header-cart--icon {
+    width: 50%;
     color: var(--black-color--);
     font-size: 3rem;
 }
