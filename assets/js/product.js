@@ -41,8 +41,10 @@ function getData(category) {
     </div>`
             })
             var html = products.join("")
-            document.querySelector(`[category=${category}]`).childNodes[3].innerHTML = html
+            document.querySelector(`[category="${category}"]`).childNodes[3].innerHTML = html
         });
 }
 
-getData("Hàng mới")
+getData("Hàng mới");
+getData("Đồng hồ");
+getData("Túi xách");
