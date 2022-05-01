@@ -10,3 +10,24 @@
         max-width: 20%;
     }
 }
+
+@media (max-width: 739px) {
+    .navbar-header {
+        padding: 0 1rem;
+    }
+
+    .navbar-header-search {
+        width: 60%;
+        margin: auto;
+    }
+
+    .btn-search--text {
+        display: none;
+    }
+
+    .navbar-header-user {
+        display: none;
+    }
+
+
+}

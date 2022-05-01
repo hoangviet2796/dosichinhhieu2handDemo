@@ -59,7 +59,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 0 1.5rem;
 }
 
 .btn-search:hover {
@@ -69,7 +69,6 @@
 .btn-search--icon {
     font-size: 1.6rem;
     width: 20%;
-    height: 70%;
     margin-right: auto;
 }
 
