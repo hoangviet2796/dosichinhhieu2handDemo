@@ -11,6 +11,13 @@
         "min": 100000,
         "max": 10000000
       }
+    },
+    "category": {
+      "string": [
+        "Hàng mới",
+        "Đồng hồ",
+        "Túi xách"
+      ]
     }
   }
 }
