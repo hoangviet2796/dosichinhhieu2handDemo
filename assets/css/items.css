@@ -4,6 +4,7 @@
 
 .productCategory {
     font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .product__item {
@@ -123,4 +124,26 @@
     border-width: 0px 18px 4px;
     border-style: solid;
     border-color: transparent var(--primary-color--) transparent var(--primary-color--);
+}
+
+.item-5 {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.productHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productHeader a {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: var(--text-color--);
+    transition: 0.3s ease-out;
+}
+
+.productHeader a:hover {
+    color: var(--primary-color--);
 }
