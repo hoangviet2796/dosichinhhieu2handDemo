@@ -1,11 +1,19 @@
+const categories = [
+    "Hàng mới",
+    "Đồng hồ",
+    "Túi xách"
+]
+console.log(categories)
 fetch("https://mockend.com/hoangviet2796/dosichinhhieu2handDemo/test")
     .then((res) => res.json())
     .then((json) => {
+
         let products = json.map(item => {
+
             return `<div class="col c-3 l-4 m-6">
         <a class="product__item" href="#">
             <div class="product__background-img"
-                style="background-image: url(https://theleaf.no/wp-content/uploads/2020/06/Product_Lg_Type.jpg);">
+                style="background-image: url(${item.image});">
             </div>
             <h4 class="product__title">${item.title}</h4>
             <div class="product__price">
@@ -31,4 +39,6 @@ fetch("https://mockend.com/hoangviet2796/dosichinhhieu2handDemo/test")
         var html = products.join("")
         document.querySelector('.productContainer').innerHTML = html
     });
+
+
 
