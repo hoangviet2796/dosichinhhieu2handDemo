@@ -14,5 +14,9 @@
     "post": {
       "belongsTo": "Post"
     }
+  },
+  "Product": {
+    "title": "Test",
+    "Price": 100
   }
 }
