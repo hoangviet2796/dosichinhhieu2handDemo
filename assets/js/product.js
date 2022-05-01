@@ -1,15 +1,15 @@
-fetch("https://fakestoreapi.com/products")
+fetch("https://mockend.com/hoangviet2796/dosichinhhieu2handDemo/test")
     .then((res) => res.json())
     .then((json) => {
         let products = json.map(item => {
             return `<div class="col c-3 l-4 m-6">
         <a class="product__item" href="#">
             <div class="product__background-img"
-                style="background-image: url(${item.image});">
+                style="background-image: url(https://theleaf.no/wp-content/uploads/2020/06/Product_Lg_Type.jpg);">
             </div>
             <h4 class="product__title">${item.title}</h4>
             <div class="product__price">
-                <span class="product__price--new">${item.price} $</span>
+                <span class="product__price--new">${item.price.toLocaleString('vi-VN')} VND</span>
             </div>
             <div class="product__status">
                 <span class="product__status-heart">
