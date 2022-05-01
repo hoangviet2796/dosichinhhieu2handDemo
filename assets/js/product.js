@@ -11,24 +11,10 @@ function getData(category) {
                 style="background-image: url(${item.image});">
             </div>
             <h4 class="product__title">${item.category + " " + item.title}</h4>
-            <span>${item.brand}</span>
+            <span class="product_origin">${item.brand}</span>
             <div class="product__price">
                 <span class="product__price--new">${item.price.toLocaleString('vi-VN')} VND</span>
-            </div>
-            <div class="product__status">
-                <span class="product__status-heart">
-                    <!--<i class="far fa-heart"></i>-->
-                    <i class="fas fa-heart"></i>
-                </span>
-                <span class="product__status-rate">
-                    <i class="product__status-icon-gold fas fa-star"></i>
-                    <i class="product__status-icon-gold fas fa-star"></i>
-                    <i class="product__status-icon-gold fas fa-star"></i>
-                    <i class="product__status-icon-gold fas fa-star"></i>
-                    <i class=" fas fa-star"></i>
-                </span>
-            </div>
-            <div class="product__origin">TP.Hồ Chí Minh</div>           
+            </div>      
         </a>
     </div>`
             })
