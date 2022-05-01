@@ -1,5 +1,5 @@
 function getData(category) {
-    fetch(`https://mockend.com/hoangviet2796/dosichinhhieu2handDemo/test?category_eq=${category}&limit=5`)
+    fetch(`https://fakestoreapi.com/products/category/${category}?limit=5`)
         .then((res) => res.json())
         .then((json) => {
 
@@ -10,7 +10,7 @@ function getData(category) {
             <div class="product__background-img"
                 style="background-image: url(${item.image});">
             </div>
-            <h4 class="product__title">${item.category + " " + item.title}</h4>
+            <h4 class="product__title">${item.title}</h4>
             <span class="product_origin">${item.brand}</span>
             <div class="product__price">
                 <span class="product__price--new">${item.price.toLocaleString('vi-VN')} VND</span>
@@ -23,6 +23,7 @@ function getData(category) {
         });
 }
 
-getData("Hàng mới");
-getData("Đồng hồ");
-getData("Túi xách");
+getData("electronics");
+getData("jewelery");
+getData("men's clothing");
+getData("women's clothing")
