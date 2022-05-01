@@ -2,6 +2,18 @@
     .swiper-pagination {
         display: none;
     }
+
+    .btn-search {
+        padding: 0 0.5rem 0 0;
+    }
+
+    .btn-search--text {
+        display: none;
+    }
+
+    .btn-search--icon {
+        margin-right: 0;
+    }
 }
 
 @media (min-width: 1240px) {
@@ -21,13 +33,12 @@
         margin: auto;
     }
 
-    .btn-search--text {
-        display: none;
-    }
-
     .navbar-header-user {
         display: none;
     }
 
+    .header-menu_bar {
+        flex-wrap: nowrap;
+    }
 
 }

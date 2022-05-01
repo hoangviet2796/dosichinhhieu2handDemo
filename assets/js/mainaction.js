@@ -23,3 +23,13 @@ function scrollheader() {
         topBtn.style.opacity = 0;
     }
 }
+
+window.addEventListener("load", function () {
+
+    var load = document.querySelector('.load');
+    var loadContainer = document.querySelector('.loadContainer');
+    var body = document.querySelector('body');
+    loadContainer.style.display = 'none';
+    load.style.display = 'none';
+    body.style.overflow = 'unset'
+})
