@@ -4,18 +4,22 @@ const categories = [
     "Túi xách"
 ]
 console.log(categories)
-fetch("https://mockend.com/hoangviet2796/dosichinhhieu2handDemo/test")
-    .then((res) => res.json())
-    .then((json) => {
 
-        let products = json.map(item => {
 
-            return `<div class="col c-3 l-4 m-6">
+
+function getData(category) {
+    fetch(`https://mockend.com/hoangviet2796/dosichinhhieu2handDemo/test?category_eq=${category}`)
+        .then((res) => res.json())
+        .then((json) => {
+
+            let products = json.map(item => {
+
+                return `<div class="col c-3 l-4 m-6">
         <a class="product__item" href="#">
             <div class="product__background-img"
                 style="background-image: url(${item.image});">
             </div>
-            <h4 class="product__title">${item.title}</h4>
+            <h4 class="product__title">${item.category + " " + item.title}</h4>
             <div class="product__price">
                 <span class="product__price--new">${item.price.toLocaleString('vi-VN')} VND</span>
             </div>
@@ -35,10 +39,10 @@ fetch("https://mockend.com/hoangviet2796/dosichinhhieu2handDemo/test")
             <div class="product__origin">TP.Hồ Chí Minh</div>           
         </a>
     </div>`
-        })
-        var html = products.join("")
-        document.querySelector('.productContainer').innerHTML = html
-    });
+            })
+            var html = products.join("")
+            document.querySelector(`[category=${category}]`).childNodes[3].innerHTML = html
+        });
+}
 
-
-
+getData("Hàng mới")
