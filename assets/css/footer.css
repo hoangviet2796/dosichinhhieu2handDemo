@@ -5,6 +5,10 @@
     overflow: hidden;
 }
 
+.footer__item {
+    padding: 0 4px;
+}
+
 .footer__logo {
     display: flex;
     align-items: center;
