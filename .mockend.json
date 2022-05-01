@@ -16,7 +16,14 @@
     }
   },
   "Product": {
-    "title": "Test",
-    "Price": 100
+    "title": {
+      "string": {}
+    },
+    "Price": {
+      "int": {
+        "min": 0,
+        "max": 1000000
+      }
+    }
   }
 }
