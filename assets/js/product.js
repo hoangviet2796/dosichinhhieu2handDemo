@@ -1,11 +1,11 @@
 const productArr = []
 
 function getData(category) {
-    fetch(`https://fakestoreapi.com/products/category/${category}?limit=5`)
+    fetch(`https://fakestoreapi.com/products/category/${category}?limit=4`)
         .then((res) => res.json())
         .then((json) => {
             let products = json.map(item => {
-                return `<div class="col item-5 l-4 m-6">
+                return `<div class="c-3 l-4 m-6">
                         <a class="product__item" href="#">
                             <div class="product__background-img"
                                 style="background-image: url(${item.image});">

@@ -95,3 +95,8 @@
 .productHeader a:hover {
     color: var(--primary-color--);
 }
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+}
