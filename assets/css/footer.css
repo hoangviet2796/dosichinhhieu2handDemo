@@ -42,9 +42,6 @@
     cursor: pointer;
 }
 
-.footer__info-contact:hover .footer__info-contact--icon {
-    color: var(--primary-color--);
-}
 
 .footer__info-contact:hover .footer__info-contact--text {
     color: var(--primary-color--);
@@ -52,12 +49,15 @@
 
 .footer__info-contact--icon {
     color: var(--white-color--);
+    width: 10%;
     font-size: 1.4rem;
     padding-right: 10px;
     transition: 0.3s linear;
 }
 
 .footer__info-contact--text {
+    display: flex;
+    align-items: center;
     color: var(--white-color--);
     text-decoration: none;
     font-size: 1.4rem;
@@ -156,6 +156,38 @@
 .footer__form__btn:hover {
     color: var(--text-color--);
     background-color: var(--white-color--);
+}
+
+.footer__title-icon {
+    font-size: 1.6rem;
+    color: var(--white-color--);
+}
+
+.footer__title--contact--list {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 50px;
+}
+
+.footer__title--contact--item {
+    display: flex;
+    margin: 1rem;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.footer__title--contact--item object {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(150deg) brightness(103%) contrast(101%);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.footer__title--contact--item object:hover {
+    filter: invert(57%) sepia(34%) saturate(837%) hue-rotate(134deg) brightness(91%) contrast(95%);
 }
 
 .powered__section {
