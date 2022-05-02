@@ -5,7 +5,7 @@ function getData(category) {
         .then((res) => res.json())
         .then((json) => {
             let products = json.map(item => {
-                return `<div class="c-3 l-4 m-6">
+                return `<div class="col c-3 l-4 m-6">
                         <a class="product__item" href="#">
                             <div class="product__background-img"
                                 style="background-image: url(${item.image});">
