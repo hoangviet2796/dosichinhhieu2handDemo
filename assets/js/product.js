@@ -23,7 +23,6 @@ function getData(category) {
         });
 }
 
-getData("electronics");
 getData("jewelery");
 getData("men's clothing");
 getData("women's clothing");
