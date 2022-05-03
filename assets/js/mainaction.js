@@ -1,26 +1,16 @@
-const topBtn = document.querySelector('.js-top-btn')
+const header = document.querySelector('.header')
 
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-
-//   } else {
-
-//   }
-// }
-
-// nav bar
-
-
+let headerHeight = header.offsetHeight
 
 window.onscroll = function () { scrollheader() };
 
 function scrollheader() {
-    if (document.body.scrollTop > 46 || document.documentElement.scrollTop > 46) {
-        topBtn.style.opacity = 1;
+    if (document.body.scrollTop > headerHeight || document.documentElement.scrollTop > headerHeight) {
+        header.style.top = '0px';
+        header.style.position = 'fixed';
     } else {
-        topBtn.style.opacity = 0;
+        header.style.position = 'relative';
+        header.style.top = window.scrollY + 'px';
     }
 }
 
@@ -32,4 +22,12 @@ window.addEventListener("load", function () {
     loadContainer.style.display = 'none';
     load.style.display = 'none';
     body.style.overflow = 'unset'
+})
+
+const navMobile = document.querySelectorAll('.navItem')
+navMobile.forEach(item => {
+    item.onclick = function () {
+        document.querySelector('.navItem.active').classList.remove('active')
+        this.classList.add('active')
+    }
 })

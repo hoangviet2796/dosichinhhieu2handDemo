@@ -35,7 +35,12 @@
 
 @media (max-width: 739px) {
     .navbar-header {
+        height: 5.5rem;
         padding: 0 1rem;
+    }
+
+    .navbar-header-logo img {
+        width: 100%;
     }
 
     .navbar-header-search {
@@ -43,7 +48,10 @@
         margin: auto;
     }
 
-    .navbar-header-cart,
+    .navbar-header-cart--icon {
+        width: 80%;
+    }
+
     .navbar-header-user {
         display: none;
     }
