@@ -23,3 +23,15 @@ body {
     height: 100%;
     overflow: hidden;
 }
+
+.container.hide {
+    display: none;
+}
+
+.modal__inner.show {
+    display: flex;
+}
+
+.container.show {
+    display: block;
+}

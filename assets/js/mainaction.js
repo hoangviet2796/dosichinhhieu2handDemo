@@ -31,3 +31,17 @@ navMobile.forEach(item => {
         this.classList.add('active')
     }
 })
+
+const containerShow = document.querySelectorAll('.container')
+const loginModal = document.querySelector('.login-page')
+const loginBtn = document.querySelector('.navbar-header-user--login')
+
+loginBtn.onclick = function () {
+    containerShow.forEach(item => {
+        loginModal.classList.add('show')
+        document.querySelector('.container.show').classList.remove('show')
+        item.classList.add('hide')
+    })
+    loginModal.classList.remove('hide')
+    loginModal.classList.add('show')
+}

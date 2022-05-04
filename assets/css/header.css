@@ -80,7 +80,7 @@
     font-weight: 600;
     line-height: 100%;
     color: var(--background-color--);
-    text-decoration: none;
+    cursor: pointer;
 }
 
 .navbar-header-cart {

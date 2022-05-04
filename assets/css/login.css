@@ -1,0 +1,145 @@
+.login-page {
+    padding: 10rem 15rem;
+}
+
+.loginContainer {
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 20px 0 rgb(0 0 0 / 5%);
+}
+
+.modal__inner {
+    width: 100%;
+    border-radius: 2rem;
+    background-color: var(--white-color--);
+    display: none;
+}
+
+.loginTabs {
+    position: relative;
+    width: 50%;
+}
+
+.image-tab {
+    background-image: url('https://img2.thuthuatphanmem.vn/uploads/2018/12/30/background-la-cay-dep_110343766.jpg');
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.text-tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 5rem;
+    color: var(--text-color--);
+}
+
+.text-tab h2 {
+    font-size: 2rem;
+}
+
+.text-tab p {
+    font-size: 1.3rem;
+}
+
+.form-tab {
+    padding: 5rem 5rem;
+}
+
+
+.modal__form__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input {
+    padding: 1rem;
+    font-size: 1.4rem;
+    outline: none;
+    margin-bottom: 1rem;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+}
+
+.form__btn {
+    height: 40px;
+    font-size: 1.4rem;
+    color: var(--white-color--);
+    font-weight: 400;
+    background-color: var(--primary-color--);
+    border: 1px solid var(--primary-color--);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+.modal__form__social {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.social__btn {
+    height: 3.5rem;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.social__content {
+    height: 100%;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--white-color--);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social__icon {
+    font-size: 2.2rem;
+}
+
+.social__btn--apple {
+    background-color: var(--black-color--);
+}
+
+.social__btn--gg {
+    background-color: #4285f4;
+}
+
+.social__btn--fb {
+    background-color: #1877f2;
+}
+
+.modal__form__agree {
+    padding: 20px 32px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.footer__text--btn,
+.agree__text--btn {
+    color: red;
+    text-decoration: none;
+}
+
+.modal__form__footer {
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0px;
+}
+
+.modal__form__option {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}

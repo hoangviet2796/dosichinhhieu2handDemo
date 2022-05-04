@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../assets/css/grid__system.css">
     <link rel="stylesheet" href="../assets/css/items.css">
     <link rel="stylesheet" href="../assets/css/modal.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
     <link rel="stylesheet" href="../assets/css/load.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -38,7 +39,7 @@
                 </button>
             </div>
             <div class="navbar-header-user">
-                <a href="./regis.html" class="navbar-header-user--login">Đăng ký/ Đăng nhập</a>
+                <span class="navbar-header-user--login">Đăng ký/ Đăng nhập</span>
             </div>
             <div class="navbar-header-cart">
                 <img class="navbar-header-cart--icon" src="../assets/img/icon/shopping-cart.png" alt="">
@@ -59,7 +60,8 @@
             </span>
         </div>
     </div>
-    <div class="grid wide container">
+    <!-- Main Page -->
+    <div class="grid wide main-page container hide">
         <div class="swiper mySwiper">
             <div id="sliderContainer" class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -100,6 +102,99 @@
             </div>
         </div>
     </div>
+    <!-- LoginModal -->
+    <div class="grid wide login-page container show">
+        <div class="loginContainer">
+            <!--Dang ky-->
+            <div class="modal__inner show">
+                <div class="loginTabs ">
+                    <div class="image-tab"></div>
+                    <div class="text-tab">
+                        <h2>Đăng ký</h2>
+                        <p>Đăng ký để có thể mua hàng và nhận nhiều ưu đãi tại dosichinhhieu2hand.com</p>
+                        <ul class="modal__form__social">
+                            <li class="social__btn social__btn--fb">
+                                <a href="" class="social__content">
+                                    <i class="social__icon fab fa-facebook"></i>
+                                    <p class="social__text">Đăng ký bằng tài khoản Facebook</p>
+                                </a>
+                            </li>
+                            <li class="social__btn social__btn--gg">
+                                <a href="" class="social__content">
+                                    <i class="social__icon fab fa-google"></i>
+                                    <p class="social__text">Đăng ký bằng tài khoản Google</p>
+                                </a>
+                            </li>
+                            <li class="social__btn social__btn--apple">
+                                <a href="" class="social__content">
+                                    <i class="social__icon fab fa-apple"></i>
+                                    <p class="social__text">Đăng ký bằng tài khoản Apple</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="modal__form__footer">
+                            <p class="footer__text">Bạn đã có tài khoản?
+                                <a href="" class="footer__text--btn">Đăng nhập</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="loginTabs form-tab">
+                    <form class="modal__form__body">
+                        <input class="form__input" type="text" placeholder="Số diện thoại"></input>
+                        <input class="form__input" type="email" placeholder="Email"></input>
+                        <input class="form__input" type="password" placeholder="Mật khẩu"></input>
+                        <button class="form__btn">ĐĂNG KÝ</button>
+                    </form>
+                </div>
+            </div>
+            <!-- dang nhap -->
+            <div class="modal__inner">
+                <div class="modal__form__header">
+                    <h3 class="form__header">Đăng Nhập</h3>
+                </div>
+                <form class="modal__form__body">
+                    <input class="form__input" type="text" placeholder="Email/Số điện thoại/ Tên đăng nhập"></input>
+                    <input class="form__input" type="password" placeholder="Mật khẩu"></input>
+                    <button class="form__btn"> ĐĂNG NHẬP</button>
+                </form>
+                <div class="modal__form__option">
+                    <a href="" class="option__text--btn">Quên mật khẩu</a>
+                    <a href="" class="option__text--btn">Đăng nhập với SMS</a>
+                </div>
+                <div class="modal__form__mid">
+                    <div class="modal__form__space"></div>
+                    <p class="modal__form__space-text">HOẶC</p>
+                    <div class="modal__form__space"></div>
+                </div>
+                <ul class="modal__form__social">
+                    <li class="social__btn social__btn--fb">
+                        <a href="" class="social__content">
+                            <i class="social__icon fab fa-facebook"></i>
+                            <p class="social__text">Facebook</p>
+                        </a>
+                    </li>
+                    <li class="social__btn social__btn--gg">
+                        <a href="" class="social__content">
+                            <i class="social__icon fab fa-google"></i>
+                            <p class="social__text">Google</p>
+                        </a>
+                    </li>
+                    <li class="social__btn social__btn--apple">
+                        <a href="" class="social__content">
+                            <i class="social__icon fab fa-apple"></i>
+                            <p class="social__text">Apple</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="modal__form__footer">
+                    <p class="footer__text">Bạn mới biết đến Shoppe?
+                        <a href="" class="footer__text--btn">Đăng ký</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="footer">
         <div class="grid wide row footer__wrap m-0">
@@ -172,34 +267,34 @@
     <!-- Modal -->
     <div class="row navbarMobile">
         <div class="navItem-wrap">
-            <div class="navItem active">
+            <a class="navItem active">
                 <img src="../assets/img/icon/home.png" alt="">
                 <span>Trang chủ</span>
-            </div>
+            </a>
         </div>
         <div class="navItem-wrap">
-            <div class="navItem">
+            <a class="navItem">
                 <img src="../assets/img/icon/discount.png" alt="">
                 <span>Khuyến mãi</span>
-            </div>
+            </a>
         </div>
         <div class="navItem-wrap">
-            <div class="navItem">
+            <a class="navItem">
                 <img src="../assets/img/icon/feedback.png" alt="">
                 <span>Feedback</span>
-            </div>
+            </a>
         </div>
         <div class="navItem-wrap">
-            <div class="navItem">
+            <a class="navItem">
                 <img src="../assets/img/icon/magazine.png" alt="">
                 <span>Tạp chí</span>
-            </div>
+            </a>
         </div>
         <div class="navItem-wrap">
-            <div class="navItem">
+            <a href="" class="navItem">
                 <img src="../assets/img/icon/user.png" alt="">
                 <span>Tài khoản</span>
-            </div>
+            </a>
         </div>
     </div>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
