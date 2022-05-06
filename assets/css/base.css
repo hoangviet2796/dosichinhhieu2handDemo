@@ -35,3 +35,13 @@ body {
 .container.show {
     display: block;
 }
+
+@keyframes scrollDown {
+    from {
+        transform: scaleY(0);
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+}

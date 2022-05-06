@@ -117,14 +117,15 @@
 }
 
 .header-menu_bar--list {
-    position: relative;
-    padding: 0px 37px;
+    position: static;
+    height: 100%;
 }
 
 .header-menu_bar--list--text {
     display: block;
     position: relative;
     text-decoration: none;
+    font-weight: 700;
     color: var(--text-color--);
     line-height: 25px;
 }
@@ -151,4 +152,63 @@
 
 .header-menu_bar--list:hover .header-menu_bar--list--text::after {
     width: 100%;
+}
+
+.submenu_bar--element {
+    position: absolute;
+    list-style: none;
+    left: 10%;
+    top: 12rem;
+    width: 80%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--white-color--);
+    box-shadow: 0px 10px 10px rgb(0 0 0 / 10%);
+    transform-origin: top;
+    display: none;
+    z-index: 100;
+    animation: scrollDown linear 0.3s;
+}
+
+.header-menu_bar--list:hover .submenu_bar--element {
+    display: block;
+}
+
+.submenu_bar--element--wrap {
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.submenu_bar--element--list {
+    padding-right: 80px;
+
+    list-style: none;
+
+}
+
+.submenu_bar--list {
+    padding: 1rem 0;
+}
+
+.submenu_bar--list--text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-color--);
+    text-decoration: none;
+}
+
+.submenu_bar--list--text:hover {
+    color: var(--primary-color--);
+}
+
+.brandsContainer .submenu_bar--list--text--title {
+    color: var(--text-color--);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-decoration: none;
 }
